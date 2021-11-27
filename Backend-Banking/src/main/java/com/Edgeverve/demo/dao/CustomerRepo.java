@@ -15,5 +15,6 @@ import com.Edgeverve.demo.model.Customer;
 public interface CustomerRepo extends JpaRepository<Customer, String> {
 
 	Optional<Customer> findByAcid(String acid);
+	//Customer findByAcid(String acid);
 
 }

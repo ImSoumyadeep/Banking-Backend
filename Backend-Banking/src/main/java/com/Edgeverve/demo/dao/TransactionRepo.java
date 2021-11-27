@@ -17,4 +17,8 @@ public interface TransactionRepo extends JpaRepository<Transactions, String>{
 	
 	@Query("from Transactions where debit_acid=?1 or credit_acid=?1")
 	List<Transactions> findByAcid(String acid);
+	
+	@Query("from Transactions where debit_acid=?1 or credit_acid=?1")
+	Transactions findByAcid_parti(String acid);
+	
 }

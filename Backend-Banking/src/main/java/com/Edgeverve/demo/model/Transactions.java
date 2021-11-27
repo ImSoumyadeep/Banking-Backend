@@ -20,7 +20,7 @@ public class Transactions {
 		private String credit_acid;
 		
 		@Column(name="date_of_transaction")
-		private Date date_of_transaction;
+		private String date_of_transaction;
 		
 		@Column(name="amount")
 		private double amount;
@@ -58,11 +58,11 @@ public class Transactions {
 			this.credit_acid = credit_acid;
 		}
 
-		public Date getDate_of_transaction() {
+		public String getDate_of_transaction() {
 			return date_of_transaction;
 		}
 
-		public void setDate_of_transaction(Date date_of_transaction) {
+		public void setDate_of_transaction(String date_of_transaction) {
 			this.date_of_transaction = date_of_transaction;
 		}
 

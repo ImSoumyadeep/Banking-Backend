@@ -16,10 +16,13 @@ public class Customer {
 	private String name;
 	@Column(name="dob")
 	private Date dob;
+	
 	@Column(name="bal")
 	private double bal;
+	
 	@Column(name="lim")
 	private double lim;
+	
 	@Column(name="lein")
 	private double lein;
 	
